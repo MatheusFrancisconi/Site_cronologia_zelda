@@ -1,6 +1,6 @@
 :root {
     --cor-fundo: #0B3D2E;
-    --cor-secundaria: #1F7A5C;
+    --cor-secundaria: #1f7a5c73;
     --cor-destaque: #FFD54A;
     --cor-texto: #F8FFF9;
 }
@@ -12,30 +12,108 @@
 
 body {
     background-color: var(--cor-fundo);
+    background-image: url('../imagens/fundo.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 32px 16px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+
 }
+
+main {
+    background-color: var(--cor-fundo);
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
 
 h1, h2, h3 {
     color: var(--cor-destaque);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    text-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
 }
 
 p {
     color: var(--cor-texto);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    text-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    font-size: 20px;
 }
 
-header h1 {
+.titulo h1 {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-size: 64px;
+
 }
 
-#origem h2 {
+.cabecalho-origem {
+    margin: 30px auto;
+    margin-bottom: 30px;
+    max-width: 550px;
+}
+
+.cabecalho-origem h2 {
     text-align: center;
+    font-size: 32px;
 }
 
-#origem > header > p {
+.cabecalho-origem p {
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
+}
+
+.organizacao-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.organizacao-imagem {
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+
+}
+
+.revelar {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: 0.8s;
+}
+
+.revelar.ativo {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.organizacao-conteudo img {
+    display: block;
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+}
+
+.organizacao-texto {
+    flex: 1;
+    text-align: center;
+    max-width: 800px;
+}
+
+.organizacao-texto h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
 }
