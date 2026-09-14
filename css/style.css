@@ -12,7 +12,7 @@
 
 body {
     background-color: var(--cor-fundo);
-    background-image: url('../imagens/fundo.jpg');
+    background-image: url("../imagens/Fundo.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,6 +45,29 @@ p {
     font-size: 20px;
 }
 
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    gap: 10px;
+}
+
+ul li a {
+    background-color: var(--cor-secundaria);
+    padding: 10px 10px;
+    border-radius: 8px;
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+    text-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    font-size: 20px;
+}
+
+hr {
+    margin-bottom: 10px;
+}
+
 .titulo h1 {
     text-align: center;
     margin-top: 30px;
@@ -53,19 +76,19 @@ p {
 
 }
 
-.cabecalho-origem {
+.cabecalho {
     margin: 30px auto;
     margin-bottom: 30px;
-    max-width: 550px;
+    max-width: 700px;
 }
 
-.cabecalho-origem h2 {
+.cabecalho h2 {
     text-align: center;
     font-size: 32px;
 }
 
-.cabecalho-origem p {
-    max-width: 500px;
+.cabecalho p {
+    max-width: 700px;
     margin: 0 auto;
     text-align: center;
 }
@@ -115,5 +138,9 @@ p {
 
 .organizacao-texto h3 {
     font-size: 32px;
+    
+}
+
+.organizacao-texto p {
     margin-bottom: 10px;
 }
